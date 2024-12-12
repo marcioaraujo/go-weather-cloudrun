@@ -39,13 +39,14 @@ Desenvolver um sistema em Go que receba um CEP, identifica a cidade e retorna o 
 ```bash
 
 go test ./internal/infra/web/handlers/ -v
+
 === RUN   TestHandlerClimaCode200
 CEP: 34012690
 localidade: Nova Lima
 err: <nil>
 Localidade: Nova+Lima
 Temperatura em 16.5
---- PASS: TestHandlerClimaCode200 (0.82s)
+--- PASS: TestHandlerClimaCode200 (0.77s)
 === RUN   TestHandlerClimaCode422
 CEP: 340000001
 --- PASS: TestHandlerClimaCode422 (0.00s)
@@ -53,9 +54,9 @@ CEP: 340000001
 CEP: 34000000
 localidade: 
 err: <nil>
---- PASS: TestHandlerClimaCode404 (0.46s)
+--- PASS: TestHandlerClimaCode404 (0.44s)
 PASS
-ok   github.com/marcioaraujo/go-weather-cloudrun/internal/infra/web/handlers 1.510s
+ok   github.com/marcioaraujo/go-weather-cloudrun/internal/infra/web/handlers 1.758s
 
 
 ```

@@ -20,7 +20,7 @@ type Temperatura struct {
 func TestHandlerClimaCode200(t *testing.T) {
 	router := chi.NewRouter()
 	router.Get("/{cep}", HandlerClima)
-	req, err := http.NewRequest("GET", "/34012690", nil)
+	req, err := http.NewRequest("GET", "/34002318", nil)
 	w := httptest.NewRecorder()
 	router.ServeHTTP(w, req)
 	assert.NoError(t, err)
